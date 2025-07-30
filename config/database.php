@@ -31,7 +31,6 @@ return [
 
     'connections' => [
 
-        
         'pgsql' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', 'pgsql'),
