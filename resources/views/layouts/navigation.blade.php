@@ -22,7 +22,7 @@
                         </x-sf-nav-link>
                     </li>
                     {{-- 他のリンクも同様に追加 --}}
-                    <li><x-sf-nav-link href="#" :icon="asset('images/I123_11372_104_3586_67_3627_35_197_69_2466.svg')">{{ __('週間メニュー') }}</x-sf-nav-link></li>
+                    <li><x-sf-nav-link :href="route('weekly-menu')" :active="request()->routeIs('weekly-menu')" :icon="asset('images/I123_11372_104_3586_67_3627_35_197_69_2466.svg')">{{ __('週間メニュー') }}</x-sf-nav-link></li>
                     <li><x-sf-nav-link href="#" :icon="asset('images/I123_11372_104_3593_67_3627_35_197.svg')">{{ __('トレーニング記録') }}</x-sf-nav-link></li>
                     <li><x-sf-nav-link href="#" :icon="asset('images/I123_11372_104_3600_67_3627_35_197_30_498.svg')">{{ __('AIトレーナー') }}</x-sf-nav-link></li>
                 </ul>

@@ -29,7 +29,9 @@ export default {
                     'tertiary-bg': 'rgba(73, 80, 87, 0.3)', // カード背景用
                     'border-light': '#343a40',             // サイドバーの区切り線用
                     'text-emphasis': '#dee2e6',            // 強調テキスト用 (例: 筋トレ詳細)
-                    'black': '#000000'
+                    'black': '#000000',
+                    'today-bg': 'rgba(208, 34, 36, 0.1)', // is-todayのカード背景
+                    'muscle-tag-bg': 'rgba(52, 58, 64, 0.3)', // 部位タグの背景
                 }
             }
         },
