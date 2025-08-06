@@ -22,6 +22,13 @@ Route::middleware('auth')->group(function () {
     Route::get('/weekly-menu', function () {
         return view('weekly-menu');
     })->name('weekly-menu');
+
+    /**
+     * training-edit(トレーニング)
+     */
+    Route::get('/training', function () {
+        return view('training-edit');
+    })->name('training');
 });
 
 require __DIR__ . '/auth.php';

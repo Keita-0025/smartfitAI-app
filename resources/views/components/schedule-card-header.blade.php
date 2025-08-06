@@ -16,6 +16,6 @@
     </div>
     <div class="flex items-center gap-2">
         <x-tag>AIトレーナー</x-tag>
-        <x-tag color="action">編集</x-tag>
+        <x-tag color="action" :href="route('training')">編集</x-tag>
     </div>
 </div>
