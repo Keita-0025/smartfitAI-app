@@ -29,6 +29,13 @@ Route::middleware('auth')->group(function () {
     Route::get('/training', function () {
         return view('training-edit');
     })->name('training');
+
+    /**
+     * ai-trainer(AIトレーナー)
+     */
+    Route::get('/ai-trainer', function () {
+        return view('ai-trainer');
+    })->name('ai-trainer');
 });
 
 require __DIR__ . '/auth.php';

@@ -28,17 +28,27 @@
 
     {{-- カードボディ：セット数、回数、重量 --}}
     <div class="flex flex-col md:flex-row justify-between gap-4">
-        <div class="flex flex-col gap-1 flex-1">
-            <label class="text-base font-normal tracking-[1.5px]">セット数</label>
-            <div class="bg-smartfit-input-bg border-2 border-smartfit-border rounded-md px-2.5 py-2 text-sm font-semibold min-h-[32px]">{{ $sets }}</div>
-        </div>
-        <div class="flex flex-col gap-1 flex-1">
-            <label class="text-base font-normal tracking-[1.5px]">回数</label>
-            <div class="bg-smartfit-input-bg border-2 border-smartfit-border rounded-md px-2.5 py-2 text-sm font-semibold min-h-[32px]">{{ $reps }}</div>
-        </div>
-        <div class="flex flex-col gap-1 flex-1">
-            <label class="text-base font-normal tracking-[1.5px]">重量</label>
-            <div class="bg-smartfit-input-bg border-2 border-smartfit-border rounded-md px-2.5 py-2 text-sm font-semibold min-h-[32px]">{{ $weight }}</div>
-        </div>
+
+        <x-forms.input-group
+            name="sets"
+            label="セット数"
+            type="number"
+            :value="$sets"
+            required />
+
+        <x-forms.input-group
+            name="reps"
+            label="回数"
+            type="number"
+            :value="$reps"
+            required />
+
+        <x-forms.input-group
+            name="weight"
+            label="重量"
+            type="number"
+            :value="$weight"
+            required />
+
     </div>
 </article>
