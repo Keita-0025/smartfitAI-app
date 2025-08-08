@@ -26,14 +26,8 @@
 
                 <!-- Email Address -->
                 <div class="flex flex-col gap-2 text-left">
-                    <label for="email" class="text-sm font-semibold text-smartfit-text-primary">メールアドレス</label>
-                    <div class="relative">
-                        {{-- アイコンはログイン画面と共通のものを使用 --}}
-                        <img src="{{ asset('images/I96_4225_4_126_35_294.svg') }}" alt="" class="absolute left-3.5 top-1/2 -translate-y-1/2 w-5 h-5">
-                        <x-text-input id="email" type="email" name="email" :value="old('email')" required autofocus
-                            autocomplete="username" placeholder="example@email.com"
-                            class="w-full bg-smartfit-input-bg border-2 border-smartfit-border rounded-lg py-2 pl-11 pr-3 text-smartfit-text-primary font-semibold placeholder:text-smartfit-text-placeholder" />
-                    </div>
+                    <x-forms.input-group label="メールアドレス" name="email" type="email" required autofocus
+                        placeholder="メールアドレスを入力" />
                     <x-input-error :messages="$errors->get('email')" class="mt-2" />
                 </div>
 
